@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.box-red{
+    width: 455px;
+    height: 100px;
+    background-color: #ff0000;
+}
+
+.box-blue{
+    width: 500px;
+    height: 100px;
+    background-color: #0000FF;
+}
+
+.img-profile{
+    width: 160px;
+    height: 160px;
+}
+
+.span-red{
+    display: inline-block;
+    background-color: #ff0000;
+    width: 100px;
+    height: 100px;
+}

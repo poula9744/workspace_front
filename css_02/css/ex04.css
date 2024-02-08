@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+table{
+    width: 900px;
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+}
+
+/* 제대로 먹었는데 표현이 안됨
+tr{
+    border: 1px solid #DDDDDD;
+} 
+*/
+
+/*여러명이 작업할 때*/
+table>thead>tr{
+    background-color: #DDDDDD;
+}
+table>thead>tr>th{
+    font-weight: bold;
+}
+table>thead>tr>th, table>tbody>tr>td{
+    border: 1px solid #DDDDDD;
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+table>tbody>tr:hover{
+    background-color: #ffff00;
+}
