@@ -6,12 +6,25 @@
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
         <style>
+            /* 일반형 
             .bg-img{
-                background-image: url("img/jung.jpg");
-                width: 700px;
-                height: 700px;
+                width: 2000px;
+                height: 2000px;
+                background-image: url("./img/back_img01.jpg");
+                background-repeat: no-repeat;
+                background-size: 500px 500px;
+                background-position: center center;
+                background-attachment: fixed;
             }
-
+            */
+            /*축약형
+            background: #022250 url(‘./img/back_img01.jpg') no-repeat fixed center center;
+            */
+            .bg-img{
+                width: 2000px;
+                height: 2000px;
+                background: #022250 url(./img/back_img01.jpg) no-repeat fixed center center;
+            }
 
 
         </style>
@@ -19,10 +32,13 @@
 
     <body>
         <div class="bg-img">
-            안녕하세요
+            
         </div>
         <br>
+        <!--
         <img src="./img/jung.jpg">
+        -->
+
 
     </body>
 
