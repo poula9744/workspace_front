@@ -26,6 +26,7 @@ table>thead>tr>th, table>tbody>tr>td{
 
 .txt-left{
     text-align: left;
+    color: #0000FF; text-decoration: underline;
 }
 
 table>tbody>tr:hover{

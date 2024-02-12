@@ -6,12 +6,27 @@
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
         <style>
+            li{
+                list-style-type: none;
+                float: left;
+                padding-right: 20px;
+            }
 
+            li:not(:last-child)::after{
+                content: " >";
+            }
+
+            
         </style>
     </head>
 
     <body>
-        
+        <ol>
+            <li>홈</li>
+            <li>게시판</li>
+            <li>일반게시판</li>
+            <li>리스트</li>
+        </ol>
         
 
     </body>
