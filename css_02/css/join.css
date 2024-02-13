@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body, div, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, ol, ul, li{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+input, select, textarea{
+    font-family: "맑은 고딕";
+    font-size: 15px;
+}
+
+radio, check label{
+    font-family: "맑은 고딕";
+    font-size: 15px;
+}
+
+body h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*위치*/
+/* clearfix */
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+ol>li{
+    list-style-type: none;
+    float: left;
+}
+
+ol>li::after{
+    content: ">";
+}
+
+ol>li:last-child::after{
+    content: ">";
+}
+
+.content{
+    width: 600px;
+    background-color: #FFFFFF;
+}
+
+/* 폼그룹 */
+.content .form-group{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px solid #00000057;
+}
+
+/* 폼타이틀 */
+.content .form-group .form-text{
+    display: inline-block;
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* 아이디 */
+.form-group #txt-id{
+    margin: 0px 0px 10px 0px;
+}
+
+/* 비밀번호 */
+.form-group #txt-pw{
+    margin: 0px 0px 10px 0px;
+}
+
+/* 이름 */
+.form-group #txt-name{
+    margin: 0px 0px 10px 0px;
+}
+
+/* 프로필사진 */
+.form-group #txt-file{
+    margin: 0px 0px 10px 0px;
+}
+
+/* 주소 */
+.form-group #txt-address{
+    margin: 0px 0px 5px 0px;
+}
+
+.form-group .address-detail{
+    width: 300px;
+    margin: 0px 0px 10px 125px;
+}
+
+/* 이동통신사 */
+.form-group #txt-tel{
+    margin: 0px 0px 10px 0px;
+}
+
+/* 나이 혈액형 */
+.form-group input[type="radio"]{
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+/* 취미 */
+.form-group input[type="checkbox"]{
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+/* 자기소개 */
+.form-group #txt-intro{
+    width: 400px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.intro{
+    float: left;
+}
+
+/*버튼*/
+.btn-area{
+    border-top: #000000;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.btn-size{
+    width: 120px;
+    padding: 10px 0px 10px 0px;
+}
+

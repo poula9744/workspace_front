@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <link rel="stylesheet" href="./css/board.css">
+    </head>
+
+    <body>
+        <div class="content">
+            <h3>일반게시판</h3>
+
+            <ol class="clearfix">
+                <li>홈</li>
+                <li>게시판</li>
+                <li>일반게시판</li>
+            </ol>
+            
+            <div class="form-group">
+                <label class="form-text" for="slt-board">게시판선택</label>
+                <select id="slt-board">
+                    <option selected="selected">선택해주세요</option>
+                    <option>공지사항</option>
+                    <option>가입인사</option>
+                    <option>유머게시판</option>
+                    <option>기타게시판</option>
+                </select>
+            </div>
+
+            <!-- 제목 -->
+            <div class="form-group">
+                <label class="form-text" for="txt-title">제목</label>
+                <input type="text" id="txt-title">
+            </div>
+            <!-- /제목 -->
+
+            <!-- 비밀번호 -->
+            <div class="form-group">
+                <label class="form-text" for="txt-password">비밀번호</label>
+                <input type="password" id="txt-password">
+            </div>
+            <!-- /비밀번호 -->
+
+            <!-- 공개범위 -->
+            <div class="form-group">
+                <span class="form-text">공개범위</span>
+                <label for="rdo-me">본인</label>
+                <input type="radio" id="rdo-me" name="scope" value="me">
+
+                <label for="rdo-login">로그인회원</label>
+                <input type="radio" id="rdo-login" name="scope" value="login">
+
+                <label for="rdo-friend">친구</label>
+                <input type="radio" id="rdo-friend" name="scope" value="friend">
+
+                <label for="rdo-all">전체</label>
+                <input type="radio" id="rdo-all" name="scope" value="all">
+            </div>
+            <!-- /공개범위 -->
+
+            <!-- 허용범위 -->
+            <div class="form-group">
+                <span class="form-text">허용범위</span>
+                <label for="chk-reply">댓글허용</label>
+                <input id="chk-reply" type="checkbox">
+
+                <label for="chk-answer">답글허용</label>
+                <input id="chk-answer" type="checkbox">
+
+                <label for="chk-like">좋아요허용</label>
+                <input id="chk-like" type="checkbox">
+            </div>
+            <!-- /허용범위 -->
+
+            <!-- 내용 -->
+            <div class="form-group">
+                <textarea id="txt-content"></textarea>
+            </div>
+            <!-- /내용 -->
+            
+            <!-- 첨부파일 -->
+            <div class="form-group">
+                <label for="txt-file" class="form-text">첨부파일</label>
+                <input id="txt-file" type="file">
+            </div>
+            <!-- /첨부파일 -->
+
+            <!-- 버튼 -->
+            <div class="btn-area">
+                <button class="btn-size">등록</button>
+                <button class="btn-size">초기화</button>
+            </div>
+            <!-- /버튼 -->
+        </div>
+        <!-- /content -->
+    </body>
+0
+</html>

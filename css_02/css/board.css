@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body, div, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, ol, ul, li{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕" ;
+    font-size: 12px;
+}
+
+.content{
+    width: 700px;
+    background-color: #FFFFFF;
+}
+
+/*타이틀*/
+.content h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*폼그룹*/
+.content .form-group{
+    margin-bottom: 10px;
+}
+
+/*위치*/
+/* clearfix */
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+ol>li{
+    list-style-type: none;
+    float: left;
+}
+
+ol>li::after{
+    content: ">";
+}
+
+ol>li:last-child::after{
+    content: ">";
+}
+
+/*폼타이틀*/
+.content .form-group .form-text{
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+/*게시판 선택*/
+.content .form-group #slt-board{
+    width: 200px;
+}
+
+/*제목*/
+.content .form-group #txt-title{
+    width: 600px;
+}
+
+/*비밀번호*/
+.content .form-group #txt-password{
+    width: 200px;
+}
+
+/*내용*/
+.form-group #txt-content{
+    width: 687px;
+    height: 80px;
+}
+
+/*첨부파일*/
+
+/*버튼영역*/
+.content .btn-area{
+    border-top: 1px solid #000000;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.content .btn-area button{
+    width: 60px;
+    height: 30px;
+}
+
+/*공개범위-폼라디오버튼*/
+.content .form-group input[type="radio"]{
+    margin-right: 10px;
+}
+
+/*허용범위-폼체크박스버튼*/
+.content .form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
