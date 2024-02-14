@@ -11,7 +11,7 @@ body{
     font-size: 12px;
 }
 
-ul{
+ul, ol{
     list-style-type: none;
 }
 
@@ -39,12 +39,16 @@ ul{
 }
 
 #wrap #contents{
-    /* border: 1px solid #000000; */
+    padding: 20px 10px 20px 10px;
 }
 
 #wrap #footer{
-    border: 1px solid #000000;
+    background-color: #e7eaed;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
 }
+
+
 
 /* header */
 #header h1{
@@ -66,6 +70,7 @@ ul{
     border: 1px solid #dddddd;
     font-size: 10px;
 }
+
 
 ul>li>a{
     height: 30px;
@@ -89,11 +94,150 @@ a:active{text-decoration: none; color: #000000;}
     font-weight: bold;
 }
 
-
-/* contents */
-
-
-
 /* footer */
+#footer p{
+    font-size: 15px;
+}
+
+#contents2 #main{
+    width: 820px;
+    float: left;
+}
 
 
+
+
+
+
+/* 메인페이지만 사용 */
+/* contents */
+#contents #profile{
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+#contents #greeting-box{
+    float: left;
+    font-size: 18px;
+}
+
+#contents #greeting-box .greeting{
+    font-weight: bold;
+}
+
+
+
+/* 메인페이지 2단 */
+/* contents2 */
+#contents2{
+    padding: 20px 0 20px 0;
+}
+
+#contents2 h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contents2 div{
+    /* border: 1px solid #000000; */
+}
+
+#contents2 #aside{
+    width: 180px;
+    float: left;
+}
+
+#contents2 #aside h2{
+    width: 160px;
+    height: 60px;
+    background-color: #bbbbbb;
+    text-align: center;
+    line-height: 60px;
+}
+
+#contents2 #aside ul{
+    width: 160px;
+}
+
+#contents2 #aside ul>li{
+    width: 148px;
+    padding: 8px 0 8px 10px ;
+    border: 1px solid #bbbbbb;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+#contents #main h2{
+    
+}
+
+#contents2 #main ol{
+    float: right;
+}
+
+#contents2 #main #main-line ol>li{
+    float: left;
+    margin-bottom: 10px;
+}
+
+#contents2 #main-line ol>li:not(:last-child)::after{
+    padding: 0 2px 0 2px;
+    content: ">";
+}
+
+
+#contents2 #main-line{
+    border-bottom: 1px solid #bbbbbb;
+}
+
+#contents2 #main table{
+    width: 820px;
+    height: 180px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#contents2 #main thead{
+    background-color: #dddddd;
+    border-top: 1px solid #474747a2;
+    border-bottom: 1px solid #474747a2;
+    height: 30px;
+}
+
+#contents2 #main tbody>tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+#contents2 #main .search{
+    float: right;
+    margin: 15px 0 3px 0;
+}
+
+#contents2 #main button{
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    font-size: 12px;
+}
+
+#contents2 #main #main-search{
+    width: 150px;
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+}
+
+
+#contents2 #main ol>li{
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+
+#contents2 #main #writing-button{
+    float: right;
+    margin-top: 8px;
+    font-size: 12px;
+}
