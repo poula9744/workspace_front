@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>mysite</title>
+        <style>
+            div{border: 1px solid #000000}
+            #subMenu{
+                float: left;
+            }
+            #main{
+                float: left;
+            }
+            /* clearfix */
+            .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+            .clearfix:after {clear: both;}
+
+
+        </style>
+    </head>
+
+    <body>
+        <div>header</div>
+        <div>nav-gnb</div>
+        <div class="clearfix">
+            <div id="subMenu">서브메뉴</div>
+            <div id="main">게시판리스트</div>
+        </div>
+        <div>footer</div>
+    </body>
+
+</html>

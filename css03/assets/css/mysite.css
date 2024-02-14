@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*** 공통 ***/
+/* 여백초기화 */
+body, div, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, ol, ul, li{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+}
+
+body{
+    font-family: "맑은 고딕", "돋음";
+    font-size: 12px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* clearfix */
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+/* 레이아웃 */
+#wrap{
+    width: 1000px;
+    margin: 0px auto;
+    /* border: 1px solid #000000; */
+}
+
+#wrap #header{
+    /* border: 1px solid #000000; */
+    padding: 10px 0px 10px 0px;
+}
+
+#wrap #nav{
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding: 10px 0px 10px 0px;
+}
+
+#wrap #contents{
+    /* border: 1px solid #000000; */
+}
+
+#wrap #footer{
+    border: 1px solid #000000;
+}
+
+/* header */
+#header h1{
+    float: left;
+    font-size: 35px;
+    color: #79b30b;
+}
+
+#header ul{
+    float: right;
+    margin: 20px 0px 0px 0px;
+}
+
+#header ul>li{
+    float: left;
+    padding: 3px 5px 3px 5px;
+    margin: 0px 0px 0px 10px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    font-size: 10px;
+}
+
+ul>li>a{
+    height: 30px;
+}
+
+a:link{text-decoration: none; color: #000000;}
+a:visited{text-decoration: none; color: #000000;}
+a:hover{text-decoration: none; color: #000000;}
+a:active{text-decoration: none; color: #000000;}
+
+/* nav */
+#nav ul{
+
+}
+
+#nav ul>li{
+    width: 250px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* contents */
+
+
+
+/* footer */
+
+
