@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#login{
+    width: 500px;
+    height: 210px;
+    border: 1px solid #dddddd;;
+    margin: 50px 0px 30px 320px;
+}
+
+#login #r-id{
+    margin: 40px 140px 20px 120px;
+}
+
+#login #r-pw{
+    margin: 0px 140px 40px 120px;
+}
+
+#login #l-button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #b6b6b6;  
+    border-radius: 2px;
+    margin: 0px 0px 40px 200px;
+}

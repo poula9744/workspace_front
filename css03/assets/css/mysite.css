@@ -168,12 +168,13 @@ a:active{text-decoration: none; color: #000000;}
     font-size: 15px;
 }
 
-#contents #main h2{
-    
+#contents2 #main h2{
+   
 }
 
 #contents2 #main ol{
     float: right;
+    margin: 0px 0px 0px 100px;
 }
 
 #contents2 #main #main-line ol>li{
@@ -191,53 +192,21 @@ a:active{text-decoration: none; color: #000000;}
     border-bottom: 1px solid #bbbbbb;
 }
 
-#contents2 #main table{
-    width: 820px;
-    height: 180px;
-    text-align: center;
-    border-collapse: collapse;
+/* 회원 */
+.arrange{
+    margin: 20px 0px 10px 110px;
+    font-size: 12px;
 }
 
-#contents2 #main thead{
-    background-color: #dddddd;
-    border-top: 1px solid #474747a2;
-    border-bottom: 1px solid #474747a2;
-    height: 30px;
-}
-
-#contents2 #main tbody>tr{
-    border-bottom: 1px solid #dddddd;
-}
-
-#contents2 #main .search{
-    float: right;
-    margin: 15px 0 3px 0;
-}
-
-#contents2 #main button{
-    width: 50px;
+.r-box{
+    width: 140px;
     height: 25px;
-    border-radius: 3px;
-    border: 1px solid #bbbbbb;
     font-size: 12px;
 }
-
-#contents2 #main #main-search{
-    width: 150px;
-    height: 24px;
-    border-radius: 3px;
-    border: 1px solid #bbbbbb;
-}
-
-
-#contents2 #main ol>li{
-    float: left;
-    margin: 5px 5px 5px 5px;
-}
-
-
-#contents2 #main #writing-button{
-    float: right;
-    margin-top: 8px;
-    font-size: 12px;
+.form-text{
+    display: inline-block;
+    width: 48px;
+    height: 20px;
+    text-align: right;
+    margin-right: 10px;
 }

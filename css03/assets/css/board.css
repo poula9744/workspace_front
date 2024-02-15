@@ -1,2 +1,122 @@
 @charset "UTF-8";
 
+
+
+#contents2 #main table{
+    width: 820px;
+    height: 180px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#contents2 #main thead{
+    background-color: #dddddd;
+    border-top: 1px solid #474747a2;
+    border-bottom: 1px solid #474747a2;
+    height: 30px;
+}
+
+#contents2 #main tbody>tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+#contents2 #main .search{
+    float: right;
+    margin: 15px 0 3px 0;
+}
+
+#contents2 #main button{
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    font-size: 12px;
+}
+
+#contents2 #main #main-search{
+    width: 150px;
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+}
+
+
+#contents2 #main ol>li{
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+#contents2 #main ol{
+    float: left;
+    margin: 5px 0px 5px 300px;
+}
+
+
+#contents2 #main #writing-button{
+    float: right;
+    margin: 8px 0px 3px 300px;
+    font-size: 12px;
+}
+
+
+#contents2 #main table{
+    width: 820px;
+    height: 180px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#contents2 #main thead{
+    background-color: #dddddd;
+    border-top: 1px solid #474747a2;
+    border-bottom: 1px solid #474747a2;
+    height: 30px;
+}
+
+#contents2 #main tbody>tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+#contents2 #main .search{
+    float: right;
+    margin: 15px 0 3px 0;
+}
+
+#contents2 #main button{
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+    font-size: 12px;
+}
+
+#contents2 #main #main-search{
+    width: 150px;
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid #bbbbbb;
+}
+
+
+#contents2 #main ol>li{
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+#contents2 #main .number{
+    float: left;
+    margin: 5px 0px 5px 300px;
+}
+
+
+#contents2 #main #writing-button{
+    float: right;
+    margin: 8px 0px 3px 300px;
+    font-size: 12px;
+}
+
+#contents2 #main-line ol{
+    float: right;
+    margin: 8px 0px 3px 600px;
+    font-size: 12px;
+}
