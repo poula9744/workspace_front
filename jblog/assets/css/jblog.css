@@ -46,10 +46,26 @@ a:active{text-decoration: none; color: #000000;}
 }
 
 /* header */
+#header{
+    margin: 80px 0px 0px 430px;
+}
 
-/* 검색창 */
+#header img{
+    width: 150px;
+}
 
-/* 체크박스 */
+#header ul>li{
+    float: left;
+    font-size: 14px;
+    border: 1px solid #8d8d8d;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+#header ul #h-login{
+    margin:1px 10px 0px 0px;
+}
+
 
 /* footer */
 #footer ul li{

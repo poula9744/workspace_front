@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* 검색창 */
+#search{
+    margin: 40px 250px 10px 250px;
+}
+
+#search input[type="text"]{
+    width: 420px;
+    height: 44.5px;
+    border: 2px solid #0000ff;
+    float: left;
+}
+
+#search button{
+    width: 60px;
+    height: 48px;
+    border: 2px solid #0000ff;
+    background-color: #0000ff;
+    font-size: 15px;
+    color: #ffffff;
+}
+/* 검색 조건 */
+#s-condition{
+    margin: 0px 0px 520px 280px;
+}
+
+#s-condition #s-title{
+    padding: 0px 20px 0px 100px;
+    float: left;
+}
+
+#s-condition #s-name{
+    padding: 0px 50px 0px 100px;
+    
+}
