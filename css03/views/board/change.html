@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>mysite</title>
+        <!-- 페이지 공통 사용 -->
+        <link rel="stylesheet" href="../../assets/css/mysite.css">
+
+        <!-- 이 페이지에서만 사용 -->
+        <link rel="stylesheet" href="../../assets/css/change.css">
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="header" class="clearfix">
+                <h1>Mysite</h1>
+
+                <ul class="clearfix">
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./register.html">회원가입</a></li>
+                </ul>
+        </div>
+        <div id="nav">
+            <ul class="clearfix">
+                <li><a href="">입사지원서</a></li>
+                <li><a href="./list.html">게시판</a></li>
+                <li><a href="./gallery.html">갤러리</a></li>
+                <li><a href="./visitorsBook.html">방명록</a></li>
+            </ul>
+        </div>
+
+        <div id="contents2">
+            <div id="aside">
+                <h2>게시판</h2>
+                <ul>
+                    <li><a href="./list.html">일반게시판</a></li>
+                    <li><a href="">댓글게시판</a></li>
+                </ul>
+
+            </div>
+
+            <div id="main">
+                <div id="main-line" class="clearfix">
+                    <h2>일반게시판</h2>
+                    <ol>
+                        <li>홈</li>
+                        <li>게시판</li>
+                        <li>일반게시판</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>작성자</th>
+                <td>정우성</td>
+            </tr>
+            <tr>
+                <th>조회수</th>
+                <td>123</td>
+            </tr>
+            <tr>
+                <th>작성일</th>
+                <td>2020-03-02</td>
+            </tr>
+            <tr>
+                <th><label id="txt-title">제목</label></th>
+                <td><input type="text" placeholder="여기에는 글제목이 출력됩니다."></td>
+            </tr>
+        </table>
+
+        <textarea>여기에는 본문내용이 출력됩니다.
+            여기에는 본문내용이 출력됩니다.
+            여기에는 본문내용이 출력됩니다.
+            여기에는 본문내용이 출력됩니다.
+            여기에는 본문내용이 출력됩니다.
+            여기에는 본문내용이 출력됩니다.
+        </textarea>
+        
+
+       <div id="btn-post" class="clearfix">
+            <button type="button">수정</button>
+            <button type="button">취소</button>
+       </div>
+
+       <div id="footer">
+            <p>
+                Copyright (c)2024 이은빈 All right reserved
+            </p>
+        </div>
+    </body>
+</html>

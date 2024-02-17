@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+table{
+    width: 820px;
+    margin: 0px 0px 0px 150px; 
+    border-bottom: 1px solid #b6b6b6;
+}
+
+table th{
+    width: 70px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+table td{
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 0px 5px 5px;
+}
+
+#story{
+    width: 820px;
+    margin: 10px 0px 0px 180px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+#btn-post{
+    float: right;
+    margin: 5px 3px 10px 0px;
+}
+
+#btn-post button{
+    width: 68px;
+    height: 30px;
+    border: 1px solid #b6b6b6;
+}
+
+#footer{
+    margin-top: 60px;
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#up-title{
+    padding: 35px 0px 15px 3px;
+    margin: 15px 0px 0px 15px;
+}
+
+#up-title #txt-title{
+    padding-right: 35px;
+    font-size: 15px;
+}
+
+#up-title input[type="text"]{
+    width: 740px;
+    height: 30px;
+}
+
+textarea{
+    width: 810px;
+    height: 380px;
+}
+
+#btn-post{
+    float: right;
+    margin: 5px 3px 10px 0px;
+}
+
+#btn-post button{
+    width: 68px;
+    height: 30px;
+    border: 1px solid #b6b6b6;
+}
+
+#footer{
+    margin-top: 60px;
+}
