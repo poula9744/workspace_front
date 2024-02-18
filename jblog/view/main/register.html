@@ -6,7 +6,7 @@
         <!-- 페이지 공통 사용 -->
         <link href="../../assets/css/jblog.css" rel="stylesheet">
         <!-- 이 페이지에서만 사용 -->
-        <link href="../../assets/css/main.css" rel="stylesheet">
+        <link href="../../assets/css/register.css" rel="stylesheet">
     </head>
 
     <body>
@@ -20,22 +20,34 @@
                 </ul>
             </div>
 
-            <div id="search">
-                <input type="text" id="txt-search" class="clearfix">
-                <button>검색</button>
+            <div id="register">
+                <div id="r-id">
+                    <label class="form-text" for="txt-id">아이디</label>
+                    <input class="r-box" id="id-box" type="text" name="txt-id" value="">
+                    <button id="d-button" type="submit">아이디체크</button>
+                    <p>사용할 수 있는 아이디입니다.</p>
+                </div>
+    
+                <div id="r-pw">
+                    <label class="form-text" for="txt-pw">패스워드</label>
+                    <input class="r-box" id="pw-box" type="password" name="txt-pw" value="">
+                </div>
+                
+                <div id="r-name">
+                    <label class="form-text" for="txt-name">이름</label>
+                    <input class="r-box" id="name-box" type="password" name="txt-name" value="">
+                </div>
+                
+                <div id="r-agree">
+                    <span class="form-text">약관동의</span>
+                    <input type="checkbox" name="chk-agree" value="">
+                    <label for="chk-agree">서비스 약관에 동의합니다</label>
+                </div>
+    
+                <button id="r-button" type="submit">회원가입</button>
             </div>
 
-            <div id="s-condition">
-                <div id="s-title">
-                    <label for="rdo-title">블로그 제목</label>
-                    <input id="rdo-title" type="radio" name="blog-search">
-                </div>
-
-                <div id="s-name">
-                    <label for="rdo-name">블로그 이름</label>
-                    <input id="rdo-title" type="radio" name="blog-search">
-                </div>
-            </div>
+            
     
             <div id="footer" class="clearfix">
                 <ul>
@@ -50,5 +62,6 @@
                 </ul>
             </div>
         </div>
+
     </body>
 </html>
