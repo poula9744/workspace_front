@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    //(2) 위에서부터 순서대로 해석
+    var test = function(){
+                    console.log("test 익명함수 실행");
+                }
+
+    //(!) 선언적 함수가 가장 먼저 해석
+    function test(){ 
+        console.log("test 기명함수 실행");
+    }
+    
+    //(3)
+    test(); //함수(변수) 실행
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>기본데이터타입</h2>
+    </body>
+
+    <script>
+        window.console.log("aaaa")  //window 생략가능
+        console.log("=======================")
+        console.log("#데이터타입 확인");
+        //자바스크립트 기본자료형은 number string boolean 
+        console.log(typeof 1);
+        console.log(typeof 1.5);
+        console.log(typeof '한');
+        console.log(typeof "안녕하세요");
+        console.log(typeof (6>5));
+        console.log(typeof (6<5));
+
+        console.log("=======================")
+        console.log("#number형 확인");
+        console.log(13+5);
+        console.log(13-5);
+        console.log(13*5);
+        console.log(13/5);
+        console.log(13%5);
+        console.log(13+5.2);
+        console.log(5+3*2);
+        console.log((5+3)*2);
+
+        console.log("=======================")
+        console.log("#String형 확인");
+        console.log("동해물과 백두산이");
+        console.log('동해물과 백두산이');
+
+        //console.log("동해물과 "백두산"이"); X
+       // console.log('동해물과 '백두산'이'); X
+        console.log("동해물과 '백두산'이");
+        console.log('동해물과 "백두산"이');
+        console.log("동해물과 \"백두산\"이");
+        console.log("동해물과 \'백두산\'이");
+
+        console.log("동해물과 \n백두산이");
+        console.log('동해물과\t백두산이');
+
+        console.log("동해물과" + "1234" + "백두산이");
+
+        console.log("=======================")
+        console.log("#boolean형 확인");
+        console.log(52>273);
+        console.log(52<273);
+        console.log(52>=273);
+        console.log(52<=273);
+        console.log(52==273);
+        console.log(52!=273);
+
+        console.log("=======================")
+        console.log("#  &&   || 연산자");
+        console.log(5>3 && 5<3); //T && F ==> F
+        console.log(5>3 || 5<3); //T || F ==> T
+
+        console.log(5>3 && 7>3); //T && T ==> T
+        console.log(5>3 || 7>3); //T || T ==> T
+
+        console.log(5<3 && 7<3); //F && F ==> F
+        console.log(5<3 || 7<3); //F || F ==> F
+    </script>
+</html>

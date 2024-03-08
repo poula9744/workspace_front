@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    let arr01 = new Array();
+    arr01[0] = 1;
+    arr01[1] = 100;
+    console.log(arr01[0]);
+    console.log(arr01[1]);
+    //////////////////////////////
+    console.log("----------------------------");
+    let arr02 = []; //new 굳이 안써도 됨
+    arr02[0] = 3;
+    arr02[1] = 5;
+    arr02[2] = 7;
+    console.log(arr02[0]);
+    console.log(arr02[1]);
+    console.log(arr02[2]);
+    //////////////////////////////
+    console.log("----------------------------");
+    let arr03 = [10,20,30,40];
+    arr03[4] = 50;
+    for(let i=0; i<arr03.length; i++){
+        console.log(arr03[i]);
+    }
+    //////////////////////////////
+    console.log("----------------------------");
+    let arr04 = [];
+    arr04[0] = 1;
+    arr04[1] = 2.5;
+    arr04[2] = "안녕";
+    arr04[3] = "Hello!"
+    arr04[4] = 5>3;
+    arr04[5] = function(){console.log("나는 익명함수")}
+    for(let i=0; i<arr04.length; i++){
+        console.log(arr04[i]);
+    }
+    arr04[5]();
+    //////////////////////////////
+    console.log("----------------------------");
+    let arr05 = [1, 2.5, "안녕", ["정우성","박명수","유재석"], 5>3];
+    console.log(arr05[3][0]);
+
+    //////////////////////////////
+    console.log("----------------------------");
+    let nameArr = [];
+    nameArr.push("정우성");
+    nameArr.push("박명수");
+    nameArr.push("이효리");
+    console.log(nameArr);
+
+    nameArr.pop();
+    console.log(nameArr); //지워
+</script>
+</html>

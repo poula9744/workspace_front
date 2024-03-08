@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    //기명함수
+    testA(); //함수 실행 
+    //함수 정의 --> 위치가 어디에 있든 정의된 부분은 위에 있는 효과O
+    //함수는 리허설 때 미리 조사해둔다
+    function testA(){ 
+        console.log("testA 기명함수 실행");
+    }
+   
+    //익명함수
+    //변수에 함수를 대입     익명함수 정의
+    let testB = function(){
+                    console.log("testB 익명함수 실행");
+                }
+    testB(); //함수(변수) 실행
+</script>
+</html>
