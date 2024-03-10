@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    //배열선언 
+    test = [];
+
+    //추가
+    test.push({
+        "name": "삼각형", 
+        "width": 5, 
+        "height": 9.408,
+        "area": function(width, height){
+            return width*height*0.5;
+        }
+    });
+
+    test.push({
+        "name": "사각형", 
+        "width": 5, 
+        "height": 6.846,
+        "area": function(width, height){
+            return width*height;
+        }
+    });
+
+    test.push({
+        "name": "원형", 
+        "width": 5, 
+        "height": 1.5,
+        "area": function(width, height){
+            return width*height*3.14
+        }
+    });
+
+    //출력 for문
+    for(let i=0; i<test.length; i++){
+        console.log(test[i].name +"의 넓이는 = "+ test[i].area(test[i].width, test[i].height));
+    }
+</script>
+</html>
