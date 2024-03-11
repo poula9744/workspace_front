@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1 id="logo">자바스크립트</h1>
+	<div id="nav">
+		<ul>
+			<li id="board">게시판</li>
+			<li id="gallery" class="active">갤러리</li>
+			<li id="guestbook">방명록</li>
+		</ul>
+	</div>
+	
+	<div id="content">
+		<p class="red">내용1입니다.</p>
+
+		<p class="blue">내용2입니다.</p>
+	</div>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>핸드폰</th>
+				<th>회사</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="n-1">
+				<td>정우성</td>
+				<td id="h-1">010-1111-1111</td>
+				<td>02-1111-1111</td>
+			</tr>
+			<tr id="n-2">
+				<td>이효리</td>
+				<td id="h-2">010-2222-2222</td>
+				<td>02-2222-2222</td>
+			</tr>
+			<tr id="n-3">
+				<td>박명수</td>
+				<td id="h-3">010-3333-3333</td>
+				<td>02-3333-3333</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+
+<script>
+//DOM tree 생성되었을때
+document.addEventListener("DOMContentLoaded", function(){
+
+	let tag01 = document.querySelector("h1");
+	console.log(tag01);
+	console.log(tag01.parentElement); //부모
+	console.log("==================================");
+	let tag02 = document.querySelector(".red");
+	console.log(tag02);
+	console.log(tag02.parentElement); //부모
+	console.log("==================================");
+	let tag03 = document.querySelector("#n-3");
+	console.log(tag03);
+	console.log(tag03.parentElement); //부모
+	console.log("==================================");
+
+	//#h-2 위치일때 본인의 tr의 id값 출력
+	let tag04 = document.querySelector("#h-2");
+	console.log(tag04);
+	console.log(tag04.parentElement.id); //부모
+
+	//#h-2 위치일때 이효리 이름 출력
+	console.log(tag04.previousElementSibling); //이전 형제
+
+	//#h-2 위치일때 회사번호 출력
+	console.log(tag04.nextElementSibling); //다음 형제
+	console.log("==================================");
+	//#h-2 위치일때 조인성값 출력
+	console.log(tag04.parentElement.parentElement.firstElementChild.firstElementChild); //부모의 부모의 첫번째 자식의 첫번째 자식
+
+	//#h-2 위치일때 박명수 회사번호 출력
+	console.log(tag04.parentElement.parentElement.lastElementChild.lastElementChild);
+});
+</script>
+
+</html>

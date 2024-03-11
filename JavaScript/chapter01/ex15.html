@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트</title>
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    //객체정의 - 생성과 함께 초기화
+    let guestbookVo = {
+        name: "황일영",
+        password: "1234",
+        content: "안녕",
+        showInfo: function(){
+            console.log(this.name + "," + this.password + "," + this.content)
+        }
+    }; //객체는 {}로
+
+    //데이터 사용
+    console.log(guestbookVo.name);
+    console.log(guestbookVo.content);
+    guestbookVo.showInfo();
+
+    //다른 표기법
+    console.log(guestbookVo["name"]);
+    console.log(guestbookVo["password"]);
+    console.log(guestbookVo["content"]);
+    guestbookVo["showInfo"]();
+
+    //////////////////////////////////////////////////////
+    //객체정의 - 생성 이후에 초기화 (값을 나중에 넣어야 할 때)
+    let guestVo = {};
+
+    guestVo.name = "이효리";
+    guestVo.password = "1234";
+    guestVo.content = "이효리 방문";
+    guestVo.showInfo = function(){
+        console.log(this.name + "," + this.password + "," + this.content)
+    };
+
+    console.log(guestVo);
+    guestVo.showInfo();
+</script>
+</html>

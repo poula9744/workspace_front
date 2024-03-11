@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<!--클래스-->
+	<ul>
+		<li class="red"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li class="blue"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li class="red"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li class="blue"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li class="green"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+	</ul>
+
+
+</body>
+
+<script>
+//DOM tree가 생성되었을 때
+document.addEventListener("DOMContentLoaded", function(){
+
+	//클래스명이 red인 태그의 첫 번째를 빨간색으로 
+	let liRedTags = document.getElementsByClassName("red");
+	console.log(liRedTags);
+	liRedTags[0].style.color="#ff0000";
+
+	//클래스명이 blue인 태그의 두 번째를 초록색으로
+	let liBlueTags = document.getElementsByClassName("blue");
+	console.log(liBlueTags);
+	liBlueTags[1].style.color="#00ff00";
+});
+
+</script>
+
+</html>

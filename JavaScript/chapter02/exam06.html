@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+	<form action="" method="">
+		<label class="form-text">아이디</label>
+		<input id="txt-userId" class="form-txt" type="text" name="userId" value="jung" placeholder="아이디를 입력해주세요"><br>
+	</form>
+
+	<a href="https://www.naver.com" target="_blank">네이버</a>
+
+	<p id="p01">문장1</p>
+	<p id="p02">문장2</p>
+</body>
+
+<script>
+//DOM tree 생성되었을 때
+document.addEventListener("DOMContentLoaded",function(){
+	//<input id="txt-userId" class="form-txt" type="text" name="userId" value="jung" placeholder="아이디를 입력해주세요"><br>
+	let tag01 = document.querySelector("#txt-userId");
+	
+	//변경
+	tag01.id = "t-id";
+	tag01.className = "f-txt";
+	tag01.type = "password";
+	tag01.name = "u-id";
+	tag01.value = "정우성";
+	tag01.placeholder = "이름입력";
+	tag01.tagName = "div";
+
+	//확인
+	console.log(tag01.id);
+	console.log(tag01.className);
+	console.log(tag01.type);
+	console.log(tag01.name);
+	console.log(tag01.value);
+	console.log(tag01.placeholder);
+	console.log(tag01.tagName);
+
+	//속성변경 실습 
+	//<a href="https://www.naver.com" target="_blank">네이버</a>
+	let tag02 = document.querySelector("a");
+	console.log(tag02);
+
+	tag02.href = "http://www.google.com";
+	tag02.target = "_self";
+	tag02.textContent = "구글";
+});
+
+</script>
+
+</html>

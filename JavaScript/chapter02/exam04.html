@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+    
+	<h1>자바스크립트</h1>
+	<div id="nav">
+		<ul>
+			<li>게시판</li>
+			<li class="active">갤러리</li>
+			<li>방명록</li>
+		</ul>
+	</div>
+	
+	<div>
+		<p class="red">내용1입니다.</p>
+
+		<p>내용2입니다.</p>
+	</div>
+
+	<form action="" method="">
+		<label>아이디</label>
+		<input type="text" name="userId" value="jung" placeholder="아이디를 입력해주세요"><br>
+		
+		<label>패스워드</label>
+		<input type="password" name="pw" value=""><br>
+
+		<label>이름</label>
+		<input type="text" name="userName" value="정우성"><br>
+		
+		<button type="submit">전송</button>
+	</form>
+</body>	
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	
+	//document.querySelector() : 1개
+	//1개 가져오기
+	let h1Tag = document.querySelector("h1");
+	console.log(h1Tag);
+	h1Tag.style.color="#ff0000";
+
+	//실험 --> 맨 위에꺼 하나만 옴
+	let liTag = document.querySelector("li");
+	console.log(liTag);
+
+	//document.querySelectorAll() : 여러개
+	let liTags = document.querySelectorAll("li");
+	console.log(liTags);
+	for(let i=0; i<liTags.length; i++){
+		liTags[i].style.color="#0000ff";
+	}
+
+	//클래스명이 active인 요소 빨간색으로
+	let activeTag = document.querySelector("#nav>ul>li.active");
+	console.log(activeTag);
+	activeTag.style.color="#ff0000";
+
+	//li요소와 label요소 빨간색으로
+	let tmpTags = document.querySelectorAll("#nav>ul>li, form>label");
+	console.log(tmpTags);
+	
+	for(let i=0; i<tmpTags.length; i++){
+		tmpTags[i].style.color="#ff0000";
+	}
+
+	let txtNameTag = document.querySelector("[name='userId']"); //" '  ' " or ' "  " '
+	txtNameTag.style.color="#ff0000";
+
+	let lastLiTag = document.querySelector("#nav ul>li:last-child");
+	console.log(lastLiTag);
+	lastLiTag.style.color="#ffff00";
+});
+
+</script>
+
+</html>
