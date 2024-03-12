@@ -57,12 +57,20 @@ document.addEventListener("DOMContentLoaded", function(){
 	personList = [];
 
 	let tag01 = document.querySelector("#n-1");
+	let tag02 = document.querySelector("#n-2");
+	let tag03 = document.querySelector("#n-3");
+
 	//personVo 
-	let personVo1 = {no: tag01.firstElementChild};
+	let personVo1 = {no: tag01.firstElementChild.textContent, hp: tag01.firstElementChild.nextElementSibling.textContent, company: tag01.lastElementChild.textContent};
+	let personVo2 = {no: tag02.firstElementChild.textContent, hp: tag02.firstElementChild.nextElementSibling.textContent, company: tag02.lastElementChild.textContent};
+	let personVo3 = {no: tag03.firstElementChild.textContent, hp: tag03.firstElementChild.nextElementSibling.textContent, company: tag03.lastElementChild.textContent};
 
 	personList.push(personVo1);
+	personList.push(personVo2);
+	personList.push(personVo3);
 
-	console.log(personList[0]);
+	console.log(personList);
+	
 });
 
 </script>
