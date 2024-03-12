@@ -23,7 +23,22 @@
 </body>
 
 <script>
+//DOM tree 생성되었을때
+document.addEventListener("DOMContentLoaded", function(){
+    console.log("DOM tree 생성");
 
+    //btn버튼을 클릭했을때
+    let btn = document.querySelector("#btn");
+    console.log(btn);
+    btn.addEventListener("dblclick", function(){
+        console.log("버튼클릭");
+        let display = document.querySelector("#display");
+        console.log(display);
+        display.textContent = "홍길동";
+        display.style.color = "#0000ff"
+    });
+
+});
 
 </script>
 

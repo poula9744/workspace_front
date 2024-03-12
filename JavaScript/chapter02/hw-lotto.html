@@ -25,7 +25,7 @@
                 <col style="width: 100px;">
                 <col style="width: 100px;">
             </colgroup>
-            <tr>
+            <tr id="tds">
                 <td>?</td>
                 <td>?</td>
                 <td>?</td>
@@ -45,7 +45,24 @@
 </body>
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
 
+    let btn = document.querySelector("#btnMakeNo");
+
+    btn.addEventListener("click", function(){
+        let tds = document.querySelectorAll("#tds>td");
+        console.log(tds);
+
+        for(let i=0; i<tds.length; i++){
+            let no = parseInt(Math.random()*45)+1;
+            tds[i].textContent = no;
+        }
+    });
+    
+    
+    
+
+});
 
 
 </script>

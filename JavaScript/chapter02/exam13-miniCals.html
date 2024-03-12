@@ -23,6 +23,36 @@
 </body>
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+    console.log("DOM tree 생성");
+
+    //더하기 버튼을 클릭했을때
+    let btn = document.querySelector("#btnPlus");
+    console.log(btn);
+    btn.addEventListener("click", function(){
+        console.log("버튼 클릭");
+        
+        //태그를 가져온다
+        let left = document.querySelector("#left");
+        let right = document.querySelector("#right");
+        let display = document.querySelector("#display");
+
+        //String -> number 변환
+        let leftVal = Number(left.value);
+        let rightVal = Number(right.value); 
+
+        //합계구하기
+        let sum = leftVal + rightVal;
+
+        //출력
+        display.textContent = sum;
+
+        //비우기
+        left.value = "";
+        right.value = "";
+    });
+
+});
 
 </script>
 

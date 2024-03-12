@@ -54,6 +54,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function(){
+	/*
 	personList = [];
 
 	let tag01 = document.querySelector("#n-1");
@@ -70,7 +71,27 @@ document.addEventListener("DOMContentLoaded", function(){
 	personList.push(personVo3);
 
 	console.log(personList);
-	
+	*/
+
+	//DOM tree 생성되었을 때
+	let trs = document.querySelectorAll("tbody>tr");
+	let personList = [];
+
+	for(let i=0; i<trs.length; i++){
+		let name = trs[i].children[0].textContent;
+		let hp = trs[i].children[1].textContent;
+		let company = trs[i].children[2].textContent;
+
+		let personVo = {
+			name: name,
+			hp: hp,
+			company: company
+		};
+
+		personList.push(personVo);
+	}
+
+	console.log(personList); //전체출력
 });
 
 </script>

@@ -46,9 +46,33 @@
 
 
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+	//화면
+	let display = document.querySelector("#display");
+	//버튼 
+	let btn0 = document.querySelector("#btn0");
+	let btn1 = document.querySelector("#btn1");
+	let btn2 = document.querySelector("#btn2");
+	let btn3 = document.querySelector("#btn3");
+	let btn4 = document.querySelector("#btn4");
+	let btn5 = document.querySelector("#btn5");
+	let btn6 = document.querySelector("#btn6");
+	let btn7 = document.querySelector("#btn7");
+	let btn8 = document.querySelector("#btn8");
+	let btn9 = document.querySelector("#btn9");
+	
+	let btnPlus = document.querySelector("#btnPlus");
+	let btnMinus = document.querySelector("#btnMinus");
+	let btnMulti = document.querySelector("#btnMulti");
+	let btnDiv = document.querySelector("#btnDiv");
+	let btnEqual = document.querySelector("#btnEqual");
+	let btnClear = document.querySelector("#btnClear");
 
-
-
-
-
+	btn0.addEventListener("click", function(){
+		console.log(btn0.textContent);
+		console.log(display.textContent);
+	});
+});
+</script>
 </html>

@@ -7,12 +7,10 @@
 <style>
 	.box-red{
 		width: 300px;
-		width: 300px;
 		background-color: #ff0000;
 	}
 
 	.box-blue{
-		width: 500px;
 		width: 500px;
 		background-color: #0000ff;
 	}
@@ -52,7 +50,24 @@
 </body>
 
 <script>
+//DOM tree 생성되었을때
+document.addEventListener("DOMContentLoaded", function(){
+	
+	let div = document.querySelector("div");
+	console.log(div.className);
+	console.log(div.classList);
 
+	//클래스명을 추가할 때
+	//div.classList.add("bold");
+	//div.classList.add("size50");
+	div.classList.add("bold", "size50");
+
+	//클래스명을 삭제할 때
+	div.classList.remove("size50");
+
+	//클래스명을 변경할 때 box-red ==> box-blue
+	div.classList.replace("box-red", "box-blue");
+});
 	
 </script>
 
