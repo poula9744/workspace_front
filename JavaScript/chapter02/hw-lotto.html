@@ -56,6 +56,13 @@ document.addEventListener("DOMContentLoaded", function(){
         for(let i=0; i<tds.length; i++){
             let no = parseInt(Math.random()*45)+1;
             tds[i].textContent = no;
+
+            for(let j=0; j<i; j++){
+               
+                if(tds[i].textContent == tds[j].textContent){
+                    i--;
+                }
+            }
         }
     });
     

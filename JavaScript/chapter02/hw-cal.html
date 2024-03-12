@@ -10,7 +10,7 @@
 <body>
 
 <div id="cal">
-	<input id="display" type="text"><br>
+	<input id="display" type="text" ><br>
 	
 	<div id="btnArea">
 		<button id="btn9" type="button">9</button>
@@ -48,31 +48,160 @@
 </body>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
+	
 	//화면
 	let display = document.querySelector("#display");
-	//버튼 
-	let btn0 = document.querySelector("#btn0");
-	let btn1 = document.querySelector("#btn1");
-	let btn2 = document.querySelector("#btn2");
-	let btn3 = document.querySelector("#btn3");
-	let btn4 = document.querySelector("#btn4");
-	let btn5 = document.querySelector("#btn5");
-	let btn6 = document.querySelector("#btn6");
-	let btn7 = document.querySelector("#btn7");
-	let btn8 = document.querySelector("#btn8");
-	let btn9 = document.querySelector("#btn9");
-	
-	let btnPlus = document.querySelector("#btnPlus");
-	let btnMinus = document.querySelector("#btnMinus");
-	let btnMulti = document.querySelector("#btnMulti");
-	let btnDiv = document.querySelector("#btnDiv");
-	let btnEqual = document.querySelector("#btnEqual");
-	let btnClear = document.querySelector("#btnClear");
 
-	btn0.addEventListener("click", function(){
-		console.log(btn0.textContent);
-		console.log(display.textContent);
+	//num
+	let num01 = "";
+	let num02 = "";
+	let operator;
+
+
+	//버튼 
+	document.querySelector("#btnPlus").addEventListener("click", function(){
+		operator = "+";
 	});
+	document.querySelector("#btnMinus").addEventListener("click", function(){
+		operator = "-";
+	});
+	document.querySelector("#btnMulti").addEventListener("click", function(){
+		operator = "*";
+	});
+	document.querySelector("#btnDiv").addEventListener("click", function(){
+		operator = "/";
+	});
+	document.querySelector("#btnEqual").addEventListener("click", function(){
+		switch(operator){
+			case "+": 
+				result = parseInt(num01) + parseInt(num02);
+				display.value = result;
+				break;
+			case "-":
+				result = parseInt(num01) - parseInt(num02);
+				display.value = result;
+				break;
+			case "*":
+				result = parseInt(num01) * parseInt(num02);
+				display.value = result;
+				break;
+			case "/":
+				result = parseInt(num01) / parseInt(num02);
+				return display.value = result;
+				break;	
+		}
+	});
+	document.querySelector("#btnClear").addEventListener("click", function(){
+		num01 = "";
+		num02 = "";
+		display.value = "";
+	});
+
+
+	//숫자 입력
+	document.querySelector("#btn0").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "0";
+			display.value = num01;
+		} else {
+			num02 = num02 + "0";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn1").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "1";
+			display.value = num01;
+		} else {
+			num02 = num02 + "1";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn2").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "2";
+			display.value = num01;
+		} else {
+			num02 = num02 + "2";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn3").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "3";
+			display.value = num01;
+		} else {
+			num02 = num02 + "3";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn4").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "4";
+			display.value = num01;
+		} else {
+			num02 = num02 + "4";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn5").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "5";
+			display.value = num01;
+		} else {
+			num02 = num02 + "5";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn6").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "6";
+			display.value = num01;
+		} else {
+			num02 = num02 + "6";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn7").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "7";
+			display.value = num01;
+		} else {
+			num02 = num02 + "7";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn8").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "8";
+			display.value = num01;
+		} else {
+			num02 = num02 + "8";
+			display.value = num02;
+		}
+	});
+
+	document.querySelector("#btn9").addEventListener("click", function(){
+		if(operator == null){
+			num01 = num01 + "9";
+			display.value = num01;
+		} else {
+			num02 = num02 + "9";
+			display.value = num02;
+		}
+	});
+
+	
+
+
 });
 </script>
 </html>
