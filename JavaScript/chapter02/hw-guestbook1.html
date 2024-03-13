@@ -12,60 +12,88 @@
 </head>
 
 <body>
-    <div>
-		<table border="1" width="540px">
-			<tr>
-				<td>이름</td><td><input type="text" name="name" id="name" value=""></td>
-				<td>비밀번호</td><td><input type="password" id="pw" name="pw" value=""></td>
-			</tr>
-			<tr>
-				<td colspan="4"><textarea cols="72" rows="5" id="content" name="content" value=""></textarea></td>
-			</tr>
-			<tr>
-				<td colspan="4"><button id="btnWrite" type="button">등록</button></td>
-			</tr>
-		</table>
+	<div id="dataArea">
+        <table border="1" width="540px">
+            <tr>
+                <td>1</td>
+                <td>이효리</td>
+                <td>2022-10-10</td>
+                <td><a href="">삭제</a></td>
+            </tr>
+            <tr>
+                <td colspan="4">이효리 방문하고 갑니다.</td>
+            </tr>
+        </table>
+        <br>
+        
+        <table border="1" width="540px">
+            <tr>
+                <td>2</td>
+                <td>유재석</td>
+                <td>2022-09-09</td>
+                <td><a href="">삭제</a></td>
+            </tr>
+            <tr>
+                <td colspan="4">유재석 방문하고 갑니다.</td>
+            </tr>
+        </table>
+        <br>
+    
+        <table border="1" width="540px">
+            <tr>
+                <td>3</td>
+                <td>정우성</td>
+                <td>2022-08-08</td>
+                <td><a href="">삭제</a></td>
+            </tr>
+            <tr>
+                <td colspan="4">정우성 방문하고 갑니다.</td>
+            </tr>
+        </table>
+        <br>
+
+        <button id="btnGetDate" type="button">데이터수집</button>
 	</div>
+
 	<br>
 
 </body>
 
 <script>
 document.addEventListener("DOMContentLoaded", function(){
-	let guestList = [];
-	let guest = document.querySelectorAll("input");
 
-	let btn = document.querySelector("#btnWrite");
-	btn.addEventListener("click", function(){
+    //데이터 수집 버튼을 클릭했을 때
+    let btn = document.querySelector("#btnGetDate");
+    btn.addEventListener("click", function(){
+        let guest = document.querySelectorAll("table");
+        console.log(guest);
+        let guestList = [];
 
-		//태그 가져오기
-		let iname = document.querySelector("#name");
-		let ipassword = document.querySelector("#pw");
-		let icontent = document.querySelector("#content");
+        console.log(guest[0].children[0].children[1].children[0].textContent);
+        
+        for(let i=0; i<guest.length; i++){
+            let no = guest[i].children[0].children[0].children[0].textContent;
+            let name = guest[i].children[0].children[0].children[1].textContent;
+            let legDate = guest[i].children[0].children[0].children[2].textContent;
+            let content = guest[i].children[0].children[1].children[0].textContent;
+
+            let guestVo={
+                no: no,
+                name: name,
+                legDate: legDate,
+                content: content
+            };
+
+            guestList.push(guestVo);
+        }
+        
+        console.log(guestList);
+        
+    });
 
 
-		let name = iname.value;
-		let password = ipassword.value;
-		let content = icontent.value;
-
-		
-		let guestVo = {
-			name: name,
-			password: password,
-			content: content
-		};
-
-		guestList.push(guestVo);
-		
-		console.log(guestList);	
-		
-		iname.value="";
-		ipassword.value="";
-		icontent.value="";
-	});
-	
-	
 });
+
 </script>
 
 </html>
